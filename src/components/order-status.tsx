@@ -22,6 +22,7 @@ export function OrderStatus({ status }: OrderStatusProps) {
     <>
       <div className="flex items-center gap-2">
         <span
+          data-testid="badge"
           className={`${
             status === 'pending'
               ? 'bg-slate-400'
